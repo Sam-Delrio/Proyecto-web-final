@@ -1,7 +1,6 @@
-/* Fondo degradado*/
+/* Fondo degradado */
 body {
   background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-  font-family: Arial, sans-serif;
   margin: 0;
 }
 
@@ -40,16 +39,18 @@ body {
 
 /* Tarjetas Neon */
 .neon-card {
+  background-color: #1c1c1c;   /* gris oscuro */
   border: 1px solid #f0f;
   box-shadow: 0 0 10px #f0f, 0 0 20px #0ff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff; /* texto blanco */
 }
 .neon-card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px #f0f, 0 0 40px #0ff;
 }
 
-/* Tamaño de imagenes */
+/* Tamaño de imágenes */
 .card-img-top {
   max-height: auto;   
   object-fit: contain; 
@@ -58,25 +59,47 @@ body {
 }
 
 .fullscreen-cards {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .console-card {
-    height: 100%;
+  height: 100%;
 }
 
 .console-card img {
-    width: 100%;
-    height: 65vh;
-    object-fit: contain; 
+  width: 100%;
+  height: 65vh;
+  object-fit: contain; 
 }
 
-/* Media Queries
+/* Dashboard */
+.sidebar {
+  width: 220px;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  border-right: 1px solid #f0f;
+  box-shadow: 0 0 10px #f0f, 0 0 20px #0ff;
+}
 
-/* Tablets*/
+.sidebar .nav-link {
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar .nav-link:hover {
+  background-color: rgba(240, 0, 240, 0.3);
+  border-radius: 8px;
+  text-shadow: 0 0 5px #f0f, 0 0 10px #0ff;
+}
+
+/* Media Queries */
+
+/* Tablets */
 @media (max-width: 991px) {
   .console-card img {
     height: 45vh;
