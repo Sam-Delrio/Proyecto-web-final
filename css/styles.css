@@ -1,0 +1,112 @@
+/* Fondo degradado*/
+body {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Contenedor principal */
+.container-main {
+  padding-top: 80px;
+}
+
+/* Header */
+.header {
+  min-height: calc(100vh - 80px);
+  text-align: center;
+}
+
+/* Texto Neon */
+.neon-text {
+  color: #fff;
+  text-shadow: 0 0 5px #f0f, 0 0 10px #f0f, 0 0 20px #0ff, 0 0 40px #0ff;
+  font-family: "Audiowide", sans-serif;
+}
+
+/* Botón Neon */
+.btn-neon {
+  background-color: transparent;
+  border: 2px solid #f0f;
+  color: #fff;
+  text-shadow: 0 0 5px #f0f, 0 0 10px #0ff;
+  box-shadow: 0 0 10px #f0f, 0 0 20px #0ff;
+  transition: all 0.3s ease-in-out;
+}
+.btn-neon:hover {
+  background-color: #f0f;
+  color: #000;
+  box-shadow: 0 0 20px #f0f, 0 0 40px #0ff;
+}
+
+/* Tarjetas Neon */
+.neon-card {
+  border: 1px solid #f0f;
+  box-shadow: 0 0 10px #f0f, 0 0 20px #0ff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.neon-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #f0f, 0 0 40px #0ff;
+}
+
+/* Tamaño de imagenes */
+.card-img-top {
+  max-height: auto;   
+  object-fit: contain; 
+  padding: 10px;       
+  border-bottom: 1px solid #f0f;
+}
+
+.fullscreen-cards {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.console-card {
+    height: 100%;
+}
+
+.console-card img {
+    width: 100%;
+    height: 65vh;
+    object-fit: contain; 
+}
+
+/* Media Queries
+
+/* Tablets*/
+@media (max-width: 991px) {
+  .console-card img {
+    height: 45vh;
+  }
+}
+
+/* Celulares */
+@media (max-width: 576px) {
+  .console-card img {
+    height: 35vh;
+  }
+
+  .card-body h5 {
+    font-size: 1.1rem;
+  }
+
+  .card-body p {
+    font-size: 0.9rem;
+  }
+
+  .btn-neon {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+}
