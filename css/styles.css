@@ -39,18 +39,18 @@ body {
 
 /* Tarjetas Neon */
 .neon-card {
-  background-color: #1c1c1c;   /* gris oscuro */
+  background-color: #1c1c1c;
   border: 1px solid #f0f;
   box-shadow: 0 0 10px #f0f, 0 0 20px #0ff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  color: #fff; /* texto blanco */
+  color: #fff;
 }
 .neon-card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px #f0f, 0 0 40px #0ff;
 }
 
-/* Tamaño de imágenes */
+/* Tamaño de imagenes */
 .card-img-top {
   max-height: auto;   
   object-fit: contain; 
